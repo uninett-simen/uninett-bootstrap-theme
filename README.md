@@ -1,4 +1,7 @@
-uninett-bootstrap-theme
+UNINETT Bootstrap Theme
 =======================
 
-UNINETT Bootstrap Theme
+Bootstrap theme with UNINETT look.
+
+
+
