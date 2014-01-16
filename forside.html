@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="shortcut icon" href="uninett-theme/ico/favicon.png">
+<link rel="shortcut icon" href="uninett-theme/ico/favicon.ico">
 <title>Uninett - Bootstrap</title>
 
 <!-- Bootstrap core CSS -->
@@ -30,38 +30,42 @@
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
       <a class="navbar-brand" href="#"><img src="uninett-theme/images/UNINETT_logo.svg" alt="Uninett logo" type="image/svg+xml"></a>
-      <div class="department">Bootstrap</div>
+      
+    </div>
+    <div class="navbar-department">
+    	<div class="department">Bootstrap</div>
     </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
+        <li class="uninett-login">
+          <button type="button" class="btn btn-default uninett-login-btn" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user uninett-fontColor-red"></span> Logg inn</button>
+        </li>
+        <li class="uninett-search">
+          <form class="navbar-form-uninett navbar-left" role="search">
+            <div class="uninett-menu-search pull-left">
+              <input type="search" class="form-control" placeholder="Søk">
+            </div>
+            <span class="glyphicon glyphicon-search glyphicon_search_menu uninett-fontColor-grey"></span>
+          </form>
+        </li>
         <li class="active"><a href="forside.html">Forsiden</a></li>
         <li><a href="artikkel.html">Artikkel</a></li>
-        <li><a href="div.html">Div</a></li>
         <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
+            <li><a href="div.html">Div</a></li>
+            <li><a href="404.html">404</a></li>
+            <li><a href="resultat.html">Søk/listevisning</a></li>
             <li class="divider"></li>
             <li class="dropdown-header">Nav header</li>
             <li><a href="#">Separated link</a></li>
             <li><a href="#">One more separated link</a></li>
           </ul>
         </li>
-        <li><div class="uninett-menu-search visible-xs pull-left"><input type="search" class="form-control" placeholder="Søk"></div><span class="glyphicon glyphicon-search glyphicon_search_menu"></span></li>
       </ul>
-      
-	<ul class="nav navbar-nav navbar-right">
-        <li><button type="button" class="btn btn-default uninett-login-btn"><span class="glyphicon glyphicon-user uninett-fontColor-red"></span> Logg inn</button></li>
-    </ul>
-    
     </div>
-    <!--/.nav-collapse --> 
   </div>
 </div>
-
 <div class="container">
-
   <div class="row">
     <div class="col-lg-12"> 
       <!-- Main component for a primary marketing message or call to action -->
@@ -73,36 +77,24 @@
       </div>
     </div>
   </div>
-  
-
-  
-
-  
-  
-    <div class="row">
-     	<div class="col-xs-12 hidden-lg hidden-md hidden-sm visible-xs">
-        	<div class="uninett-color-white uninett-padded gutter">
-            	<button type="button" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-earphone"></span> Support</button>
-                
-<button type="button" class="btn btn-default btn-lg pull-right"><span class="glyphicon glyphicon-envelope uninett-fontColor-red"></span> Send e-post</button>
-            </div>
-        </div>     
-     </div>
-     
-  
- <div class="row">
+  <div class="row">
+    <div class="col-xs-12 hidden-lg hidden-md hidden-sm visible-xs">
+      <div class="uninett-color-white uninett-padded gutter">
+        <button type="button" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-earphone"></span> Support</button>
+        <button type="button" class="btn btn-default btn-lg pull-right"><span class="glyphicon glyphicon-envelope uninett-fontColor-red"></span> Send e-post</button>
+      </div>
+    </div>
+  </div>
+  <div class="row">
     <div class="col-lg-12"> 
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron uninett-color-darkBlue uninett-pattern1">
         <h1>Mørk jumbotron</h1>
         <p class="uninett-fontColor-white">Dette er et eksempel på en enkel forside for Uninett med Bootstrap. Alle Bootstrap komponenter er tilpasset den nye profilen.</p>
-       
       </div>
     </div>
   </div>
-  
   <div class="row">
-  
     <div class="col-lg-6 col-md-6">
       <div class="uninett-color-white uninett-padded gutter">
         <h2>API Authorization as a Service</h2>
@@ -111,7 +103,6 @@
         <p><a class="btn btn-default" href="#" role="button"><span class="glyphicon glyphicon-cloud-download"></span> Last ned</a></p>
       </div>
     </div>
-
     <div class="col-lg-6 col-md-6">
       <div class="uninett-color-white uninett-padded gutter">
         <h2>Uninett WebApp Park Architecture</h2>
@@ -120,16 +111,11 @@
         <p><a class="btn btn-default" href="#" role="button">Se en artikkelmal &raquo;</a></p>
       </div>
     </div>
-    
-    
-    
   </div>
-  
   
   <!-- Example row of columns -->
   <div class="row">
-  
-	<div class="col-lg-4 col-md-4">
+    <div class="col-lg-4 col-md-4">
       <div class="uninett-color-white uninett-padded gutter">
         <h2>Announcing New Sparkling SAML 2.0 Debugger</h2>
         <p>I’ve done a rewrite of the old webbased SAML 2.0 debugger, which will help you to decode the various SAML bindings for easier debugging SAML messages.</p>
@@ -137,7 +123,6 @@
         <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
       </div>
     </div>
-  
     <div class="col-lg-4 col-md-4">
       <div class="uninett-color-lightGreen uninett-padded gutter">
         <h2 class="uninett-fontColor-white">Announcing online JWT Debugger tool</h2>
@@ -146,8 +131,6 @@
         <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
       </div>
     </div>
-   
-    
     <div class="col-lg-4 col-md-4">
       <div class="uninett-color-white uninett-padded gutter">
         <h2>Using JSO with Phonegap and ChildBrowser</h2>
@@ -157,13 +140,9 @@
         <p><a class="btn btn-default" href="#" role="button"><span class="glyphicon glyphicon-star"></span> View details</a></p>
       </div>
     </div>
-    
-  </div>  
-  
-  
- <div class="row uninett-color-white uninett-whole-row">
-
-	<div class="col-lg-6 col-md-6 uninett-whole-row-col">
+  </div>
+  <div class="row uninett-color-white uninett-whole-row">
+    <div class="col-lg-6 col-md-6 uninett-whole-row-col">
       <div class="uninett-padded">
         <h2>Announcing New Sparkling SAML 2.0 Debugger</h2>
         <p>I’ve done a rewrite of the old webbased SAML 2.0 debugger, which will help you to decode the various SAML bindings for easier debugging SAML messages.</p>
@@ -171,7 +150,6 @@
         <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
       </div>
     </div>
-  
     <div class="col-lg-6 col-md-6 uninett-whole-row-col">
       <div class="uninett-padded">
         <h2>Announcing online JWT Debugger tool</h2>
@@ -180,39 +158,47 @@
         <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
       </div>
     </div>
-
-    
-  </div>  
-  
-  
-  
+  </div>
   <hr class="uninett-hr-divider">
-  
-  
-	<div class="row">
-    	<div class="col-lg-12">
-        	<div class="footer-uninett">
-            <div class="footer-logo">
-            <img src="uninett-theme/images/UNINETT_pil_rod.svg" alt="Uninett logo" type="image/svg+xml"></div>
-      		<div class="footer-uninett-department">Uninett footer</div>
-            </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="footer-uninett">
+      	<div class="footer-content-uninett">
+            <div class="footer-logo"> <img src="uninett-theme/images/Uninett_pil_rod.svg" alt="Uninett logo" type="image/svg+xml"></div>
+            <div class="footer-uninett-department">Uninett AS 2013-2014</div>
         </div>
+        <div class="clearfix"></div>
+      </div>
     </div>
-
-	<div class="row">
-    		<div class="col-lg-12"><p>&nbsp;</p></div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <p>&nbsp;</p>
     </div>
-
-  
-  
+  </div>
 </div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-login-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-login-title" id="myModalLabel">Logg inn</h4>
+      </div>
+      <div class="modal-body"> ... </div>
+      <div class="modal-login-footer">
+        <button type="button" data-loading-text="Logger inn..." class="btn btn-primary">Logg inn</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- /container --> 
 
 <!-- Bootstrap core JavaScript
     ================================================== --> 
 <!-- Placed at the end of the document so the pages load faster --> 
 <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script> 
-<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script> 
 <script src="js/holder.js"></script>
 </body>
 </html>

@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="shortcut icon" href="uninett-theme/ico/favicon.png">
+<link rel="shortcut icon" href="uninett-theme/ico/favicon.ico">
 <title>Uninett - Bootstrap</title>
 
 <!-- Bootstrap core CSS -->
@@ -30,28 +30,38 @@
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
       <a class="navbar-brand" href="#"><img src="uninett-theme/images/UNINETT_logo.svg" alt="Uninett logo" type="image/svg+xml"></a>
-      <div class="department">Bootstrap</div>
+    </div>
+    <div class="navbar-department">
+    	<div class="department">Bootstrap</div>
     </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
+        <li class="uninett-login">
+          <button type="button" class="btn btn-default uninett-login-btn" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user uninett-fontColor-red"></span> Logg inn</button>
+        </li>
+        <li class="uninett-search">
+          <form class="navbar-form-uninett navbar-left" role="search">
+            <div class="uninett-menu-search pull-left">
+              <input type="search" class="form-control" placeholder="Søk">
+            </div>
+            <span class="glyphicon glyphicon-search glyphicon_search_menu uninett-fontColor-grey"></span>
+          </form>
+        </li>
         <li><a href="forside.html">Forsiden</a></li>
         <li><a href="artikkel.html">Artikkel</a></li>
-        <li class="active"><a href="div.html">Div</a></li>
-        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
+            <li class="active"><a href="div.html">Div</a></li>
+            <li><a href="404.html">404</a></li>
+            <li><a href="resultat.html">Søk/listevisning</a></li>
             <li class="divider"></li>
             <li class="dropdown-header">Nav header</li>
             <li><a href="#">Separated link</a></li>
             <li><a href="#">One more separated link</a></li>
           </ul>
         </li>
-        <li><span class="glyphicon glyphicon-search glyphicon_search_menu"></span></li>
       </ul>
     </div>
-    <!--/.nav-collapse --> 
   </div>
 </div>
 
