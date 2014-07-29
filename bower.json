@@ -1,0 +1,6 @@
+{
+  "name": "uninett-bootstrap-theme",
+  "version": "0.0.0",
+  "homepage": "https://github.com/uninett-simen/uninett-bootstrap-theme",
+  "main": "uninett-theme/css/uninett.css",
+}
